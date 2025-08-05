@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "../utils.js";
+import { createPageUrl } from "../utils.jsx";
 import { FadeInOnScroll, TypewriterText } from "../Components/AnimatedText";
 
 export default function Home() {

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Layout from './Layout.js';
-import Home from './Pages/index.js';
-import About from './Pages/about.js';
-import Work from './Pages/work.js';
-import Blog from './Pages/blog.js';
-import BlogPost from './Pages/blogPost.js';
-import Contact from './Pages/contact.js';
+import Layout from './Layout.jsx';
+import Home from './Pages/index.jsx';
+import About from './Pages/about.jsx';
+import Work from './Pages/work.jsx';
+import Blog from './Pages/blog.jsx';
+import BlogPost from './Pages/blogPost.jsx';
+import Contact from './Pages/contact.jsx';
 
 function App() {
   return (
