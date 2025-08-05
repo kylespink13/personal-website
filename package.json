@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kylespink.github.io/personal-website",
+  "homepage": "https://kylespink13.github.io/personal-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
