@@ -197,7 +197,7 @@ export default function Layout({ children, currentPageName }) {
               style={{ color: pageStyles.textPrimary }}
               onClick={scrollToTop}
             >
-              Your Name
+              Kyle Spink
             </Link>
             
             {/* Desktop Navigation */}
@@ -299,15 +299,15 @@ export default function Layout({ children, currentPageName }) {
             </div>
             <div>
               <p className="mb-1" style={{ color: pageStyles.textSecondary }}>Contact:</p>
-              <p>your.email@university.edu</p>
+              <p>kspink@uci.edu</p>
             </div>
             <div>
               <p className="mb-1" style={{ color: pageStyles.textSecondary }}>Current location:</p>
-              <p>University Campus</p>
+              <p>Santa Barbara, CA</p>
             </div>
             <div>
               <p className="mb-1" style={{ color: pageStyles.textSecondary }}>Copyright:</p>
-              <p>©2024 Your Name</p>
+              <p>©2024 Kyle Spink</p>
             </div>
           </div>
         </div>
