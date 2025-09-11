@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FadeInOnScroll } from "../Components/AnimatedText";
+import KiloZot from "../assets/images/KiloZot.jpeg";
+import HSSOHeatSink from "../assets/images/HSSO_Heat_Sink.png";
 
 export default function Work() {
   return (
@@ -20,7 +22,7 @@ export default function Work() {
                   <div className="border border-zinc-700 p-6 rounded-lg hover:border-zinc-500 transition-colors cursor-pointer group">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src={`${process.env.PUBLIC_URL}/KiloZot.jpeg`} 
+                        src={KiloZot} 
                         alt="UCI Anteater Electric Racing" 
                         className="max-w-full h-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
                         style={{ maxHeight: '200px' }}
@@ -42,7 +44,7 @@ export default function Work() {
                   <div className="border border-zinc-700 p-6 rounded-lg hover:border-zinc-500 transition-colors cursor-pointer group">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src={`${process.env.PUBLIC_URL}/Temperature Distribution.png`} 
+                        src={HSSOHeatSink} 
                         alt="Heat Transfer Optimization" 
                         className="max-w-full h-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
                         style={{ maxHeight: '200px' }}

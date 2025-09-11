@@ -1,47 +1,58 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { FadeInOnScroll } from "../Components/AnimatedText";
+import KiloZot from "../assets/images/KiloZot.jpeg";
+import HSSOHeatSink from "../assets/images/HSSO_Heat_Sink.png";
+import TemperatureDistribution from "../assets/images/Temperature Distribution.png";
+import AFRPressurePlot from "../assets/images/AFR_Pressure_Plot.png";
+import AFRDragVsAoA from "../assets/images/AFR_Drag_vs_AoA.png";
+import AFRParallelAoA from "../assets/images/AFR_Parallel_AoA.png";
+import AFRServoActuatedDRS from "../assets/images/AFR_Servo_Actuated_DRS.png";
+import AFRLinearActuator from "../assets/images/AFR_Linear_Actuator.png";
+import AFRDecisionMatrix from "../assets/images/AFR_Decision_Matrix.png";
+import AFR4BarLinkage from "../assets/images/AFR_4_Bar_Linkage.png";
+import AFRDesignReport from "../assets/images/AFR_Design_Report.png";
 
 const workProjects = {
   "uci-racing": {
     title: "UCI Anteater Electric Racing",
     subtitle: "",
-    images: [`${process.env.PUBLIC_URL}/KiloZot.jpeg`],
+    images: [KiloZot],
     description: "Working as part of the aerodynamics subteam to optimize vehicle performance through computational fluid dynamics analysis and to design a DRS mechanism for the 2026 EV rear wing.",
     accomplishments: [
       {
         text: "Performed CFD simulations done of the rear wing airfoils. These were done to act as a benchmark that we later expanded on by running simulations for the full wing and for various angle of attacks to determine the open configuration that yields the optimal drag and downforce which can be achieved with a DRS mechanism.",
-        image: `${process.env.PUBLIC_URL}/AFR_Pressure_Plot.png`
+        image: AFRPressurePlot
       },
       {
         text: "Used CFD simulations to make MATLAB plots to show the total drag and downforce for varying angles of attacks (AoAs). To be able to run this study, I had to recreate the rear wing except as an assembly with each airfoil as an individual part which enabled me to define an angle mate between the chord line and the horizontal plane which could then be changed to mimic how a DRS would open and close the top two airfoils. In total, 100 simulations were ran for a variety of combinations for the AoAs and a MATLAB plot was made showing the final interpolated results.",
-        image: `${process.env.PUBLIC_URL}/AFR_Drag_vs_AoA.png`
+        image: AFRDragVsAoA
       },
       {
         text: "Created similar plots as before of the EV rear wing but redone with assuming that the top two airfoils remained parallel to one another. I made another MATLAB plot showing how the drag and downforce change with respect to the airfoil's angle of attack.",
-        image: `${process.env.PUBLIC_URL}/AFR_Parallel_AoA.png`
+        image: AFRParallelAoA
       },
       {
         text: "Made proof of concept for a servo motor-actuated DRS. This was designed using two steering rods, a bell crank, and a horn. They are supported by a 3 mm flange bearing which would be press fitted each end plate. Further work could be done to determine the optimal values for: a) the location of the servo motor, b) the length of the servo horn, c) the locations of the airfoils' axes of rotations, d) The angle of the bell crank and top horn relative to each of the airfoils, and e) the lengths of the bell crank and top horn. These values would be chosen such that both the required torque and the time it takes to actuate from one angle of attack to another is minimized. For an animation showing the airfoils actuate, <a href='https://youtu.be/Y2mW5fWpfmI' target='_blank' rel='noopener noreferrer' style='color: #60a5fa; text-decoration: underline;' onmouseover='this.style.color=\"#93c5fd\"' onmouseout='this.style.color=\"#60a5fa\"'>click here</a>.",
-        image: `${process.env.PUBLIC_URL}/AFR_Servo_Actuated_DRS.png`
+        image: AFRServoActuatedDRS
       },
       {
         text: "Designed airfoil sleeves and linkage mechanism for a linearly actuated DRS (pneumatic or electric).",
-        image: `${process.env.PUBLIC_URL}/AFR_Linear_Actuator.png`,
+        image: AFRLinearActuator,
         imageClass: "w-1/3"
       },
       {
         text: "Constructed a decision matrix to assess the effectiveness of multiple prototypes taking into account their different methods of actuation, their cost, ease of manufacturing/assembly, weight, how much they obstruct the airfoils, if they allow for continuous states, and if they provide fail-proof measures. Different weights were placed on each criterion to reflect their importance (for example, more weight was placed on the cost criterion than the extent a given method obstructs the airfoils).",
-        image: `${process.env.PUBLIC_URL}/AFR_Decision_Matrix.png`
+        image: AFRDecisionMatrix
       },
       {
         text: "Derived equations of motion for a four bar linkage to provide a reference for determining the optimal values for the servo motor-actuated DRS. These equations could then used to determine the required torque and the time it takes to actuate from one angle of attack to another.",
-        image: `${process.env.PUBLIC_URL}/AFR_4_Bar_Linkage.png`,
+        image: AFR4BarLinkage,
         imageClass: "w-1/2"
       },
       {
         text: "Compiled a <a href='https://drive.google.com/file/d/1E46PfkEiKqpv6veVH62QlbdSC8tC8ze4/view?usp=sharing' target='_blank' rel='noopener noreferrer' style='color: #60a5fa; text-decoration: underline;' onmouseover='this.style.color=\"#93c5fd\"' onmouseout='this.style.color=\"#60a5fa\"'>design report</a> done using LaTeX which includes sections that cover an overview of what a DRS is, the benefits it provides, simulation results, a survey of potential designs (linear actuation, either a pneumatic or electric actuator, or rotary actuation, either a motor to a worm gear or motor to a linkage), a manufacturing plan and BOM, and conclusions/further work.",
-        image: `${process.env.PUBLIC_URL}/AFR_Design_Report.png`,
+        image: AFRDesignReport,
         imageClass: "w-1/2"
       }
     ],
@@ -52,12 +63,12 @@ const workProjects = {
   "heat-transfer": {
     title: "Heat Transfer Optimization",
     subtitle: "Research Project",
-    images: [`${process.env.PUBLIC_URL}/Temperature Distribution.png`],
+    images: [TemperatureDistribution],
     description: "Research project focused on optimizing thermal management systems for aerospace applications using advanced computational methods.",
     accomplishments: [
       {
         text: "Developed novel finite element model reducing computational time by 40%",
-        image: `${process.env.PUBLIC_URL}/Temperature Distribution.png`
+        image: TemperatureDistribution
       },
       {
         text: "Published research findings in International Journal of Heat and Mass Transfer",
