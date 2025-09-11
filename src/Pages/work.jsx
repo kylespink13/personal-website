@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FadeInOnScroll } from "../Components/AnimatedText";
 
 export default function Work() {
@@ -15,29 +16,49 @@ export default function Work() {
             
             <FadeInOnScroll delay={200}>
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="border border-zinc-700 p-6 rounded-lg">
-                  <h3 className="text-xl font-light mb-4 text-zinc-100">Orbital Mechanics Simulation</h3>
-                  <p className="text-zinc-400 mb-4">
-                    Developed a Python-based simulation tool for analyzing spacecraft trajectories and orbital transfers.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">Python</span>
-                    <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">NumPy</span>
-                    <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">Matplotlib</span>
+                <Link to="/work/uci-racing" className="block">
+                  <div className="border border-zinc-700 p-6 rounded-lg hover:border-zinc-500 transition-colors cursor-pointer group">
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src="/KiloZot.jpeg" 
+                        alt="UCI Anteater Electric Racing" 
+                        className="max-w-full h-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
+                        style={{ maxHeight: '200px' }}
+                      />
+                    </div>
+                    <h3 className="text-xl font-light mb-4 text-zinc-100 group-hover:text-zinc-200 transition-colors">UCI Anteater Electric Racing</h3>
+                    <p className="text-zinc-400 mb-4 group-hover:text-zinc-300 transition-colors">
+                      Working under the aerodynamics subteam
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">ANSYS</span>
+                      <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">SolidWorks</span>
+                      <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">SolidWorks CFD/FEA Package</span>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 
-                <div className="border border-zinc-700 p-6 rounded-lg">
-                  <h3 className="text-xl font-light mb-4 text-zinc-100">Heat Transfer Optimization</h3>
-                  <p className="text-zinc-400 mb-4">
-                    Research project focused on optimizing thermal management systems for aerospace applications.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">MATLAB</span>
-                    <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">CFD</span>
-                    <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">Thermal Analysis</span>
+                <Link to="/work/heat-transfer" className="block">
+                  <div className="border border-zinc-700 p-6 rounded-lg hover:border-zinc-500 transition-colors cursor-pointer group">
+                    <div className="flex justify-center mb-4">
+                      <img 
+                        src="/Temperature Distribution.png" 
+                        alt="Heat Transfer Optimization" 
+                        className="max-w-full h-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
+                        style={{ maxHeight: '200px' }}
+                      />
+                    </div>
+                    <h3 className="text-xl font-light mb-4 text-zinc-100 group-hover:text-zinc-200 transition-colors">Heat Transfer Optimization</h3>
+                    <p className="text-zinc-400 mb-4 group-hover:text-zinc-300 transition-colors">
+                      Research project focused on optimizing thermal management systems for aerospace applications.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">MATLAB</span>
+                      <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">CFD</span>
+                      <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded">Thermal Analysis</span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </FadeInOnScroll>
           </div>
