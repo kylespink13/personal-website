@@ -51,9 +51,9 @@ const workProjects = {
   },
   "heat-transfer": {
     title: "Heat Transfer Optimization",
-    subtitle: "Research Project",
-    images: ["/Temperature Distribution.png"],
-    description: "Research project focused on optimizing thermal management systems for aerospace applications using advanced computational methods.",
+    subtitle: "",
+    images: ["/HSSO_Heat_Sink.png"],
+    description: "Course final project focused on optimizing heat dissipation of a heat sink using the finite element method and adjoint method.",
     accomplishments: [
       {
         text: "Developed novel finite element model reducing computational time by 40%",
@@ -73,8 +73,8 @@ const workProjects = {
       }
     ],
     technologies: ["MATLAB", "CFD", "Thermal Analysis", "Finite Element Method"],
-    timeline: "2023 - 2024",
-    role: "Research Assistant"
+    timeline: "January 2024 - June 2024",
+    role: ""
   }
 };
 
@@ -143,10 +143,14 @@ export default function WorkDetail() {
                 <p className="text-lg sm:text-xl font-light mb-2" style={{ color: 'var(--text-secondary)' }}>
                   {project.subtitle}
                 </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6 text-sm" style={{ color: 'var(--text-secondary)' }}>
+                <div className={`flex ${project.role ? 'flex-col sm:flex-row' : 'justify-center'} justify-center gap-2 sm:gap-6 text-sm`} style={{ color: 'var(--text-secondary)' }}>
                   <span>{project.timeline}</span>
-                  <span>•</span>
-                  <span>{project.role}</span>
+                  {project.role && (
+                    <>
+                      <span>•</span>
+                      <span>{project.role}</span>
+                    </>
+                  )}
                 </div>
               </div>
             </FadeInOnScroll>
