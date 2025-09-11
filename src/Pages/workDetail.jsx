@@ -6,7 +6,7 @@ const workProjects = {
   "uci-racing": {
     title: "UCI Anteater Electric Racing",
     subtitle: "",
-    images: ["KiloZot.jpeg"],
+    images: ["./KiloZot.jpeg"],
     description: "Working as part of the aerodynamics subteam to optimize vehicle performance through computational fluid dynamics analysis and to design a DRS mechanism for the 2026 EV rear wing.",
     accomplishments: [
       {
@@ -52,12 +52,12 @@ const workProjects = {
   "heat-transfer": {
     title: "Heat Transfer Optimization",
     subtitle: "",
-    images: ["HSSO_Heat_Sink.png"],
+    images: ["./HSSO_Heat_Sink.png"],
     description: "Course final project focused on optimizing heat dissipation of a heat sink using the finite element method and adjoint method.",
     accomplishments: [
       {
         text: "Developed novel finite element model reducing computational time by 40%",
-        image: "Temperature Distribution.png"
+        image: "./Temperature Distribution.png"
       },
       {
         text: "Published research findings in International Journal of Heat and Mass Transfer",
