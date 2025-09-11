@@ -20,7 +20,7 @@ export default function Work() {
                   <div className="border border-zinc-700 p-6 rounded-lg hover:border-zinc-500 transition-colors cursor-pointer group">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src="./KiloZot.jpeg" 
+                        src={`${process.env.PUBLIC_URL}/KiloZot.jpeg`} 
                         alt="UCI Anteater Electric Racing" 
                         className="max-w-full h-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
                         style={{ maxHeight: '200px' }}
@@ -42,7 +42,7 @@ export default function Work() {
                   <div className="border border-zinc-700 p-6 rounded-lg hover:border-zinc-500 transition-colors cursor-pointer group">
                     <div className="flex justify-center mb-4">
                       <img 
-                        src="./Temperature Distribution.png" 
+                        src={`${process.env.PUBLIC_URL}/Temperature Distribution.png`} 
                         alt="Heat Transfer Optimization" 
                         className="max-w-full h-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
                         style={{ maxHeight: '200px' }}
